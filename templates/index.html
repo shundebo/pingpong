@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乒乓球游戏</title>
+    <style>
+        body, html { height: 100%; margin: 0; }
+        .game-canvas { display: block; margin: auto; background-color: #0000FF; }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" class="game-canvas"></canvas>
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const context = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let ball = {
+            x: canvas.width / 2,
+            y: canvas.height / 2,
+            radius: 10,
+            dx: 5,
+            dy: -5,
+            angle: getRandomAngle()
+        };
+
+        let paddle = {
+            width: 10,
+            height: 100,
+            x: canvas.width - 20,
+            y: canvas.height / 2 - 50,
+            dy: 10
+        };
+
+        let score = 0;
+        let collisionCooldown = false; // 防止重复计分
+
+        function getRandomAngle() {
+            let angle;
+            do {
+                angle = Math.random() * 120 + 30; // 随机角度，范围30到150
+            } while (angle >= 80 && angle <= 100); // 排除角度范围80到100
+            return angle;
+        }
+
+        function drawBall() {
+            context.beginPath();
+            context.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
+            context.fillStyle = "#FFFFFF";
+            context.fill();
+            context.closePath();
+        }
+
+        function drawPaddle() {
+            context.beginPath();
+            context.rect(paddle.x, paddle.y, paddle.width, paddle.height);
+            context.fillStyle = "#FFFFFF";
+            context.fill();
+            context.closePath();
+        }
+
+        function drawScore() {
+            context.font = "16px Arial";
+            context.fillStyle = "#FFFFFF";
+            context.fillText("得分: " + score, 8, 20);
+        }
+
+        function updatePaddlePosition() {
+            fetch('/hand_position')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.hand_position !== null) {
+                        paddle.y = data.hand_position - paddle.height / 2;
+                    }
+                });
+        }
+
+        function update() {
+            ball.x += ball.dx;
+            ball.y += ball.dy;
+
+            // 如果碰到上下边界，改变方向
+            if (ball.y + ball.dy < ball.radius || ball.y + ball.dy > canvas.height - ball.radius) {
+                ball.dy = -ball.dy;
+            }
+
+            // 如果碰到左边界，改变方向
+            if (ball.x + ball.dx < ball.radius) {
+                ball.dx = -ball.dx;
+            } else if (ball.x + ball.dx > canvas.width - ball.radius) {
+                // 球碰到右侧（挡板所在处）
+                if (ball.y > paddle.y && ball.y < paddle.y + paddle.height && !collisionCooldown) {
+                    ball.dx = -ball.dx;
+                    score++;
+                    collisionCooldown = true; // 开启冷却，防止重复计分
+                } else if (ball.x > canvas.width) {
+                    // 如果球穿过挡板，重新加载页面
+                    document.location.reload();
+                }
+            }
+
+            // 如果检测到碰撞，延时一段时间后重置冷却状态
+            if (collisionCooldown) {
+                setTimeout(() => {
+                    collisionCooldown = false;
+                }, 200); // 设置200ms冷却时间（可以根据需求调整）
+            }
+
+            updatePaddlePosition();
+
+            // 刷新画面
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            drawBall();
+            drawPaddle();
+            drawScore();
+        }
+
+        setInterval(update, 10); // 每10ms更新一次画面
+    </script>
+</body>
+</html>
