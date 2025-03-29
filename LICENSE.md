@@ -82,6 +82,8 @@ By using the software, the user acknowledges that they have read, understood, an
 
 
 # 自定义软件许可协议
+[CHN](#自定义软件许可协议)
+[ENG](#CustomSoftwareLicense)
 
 ## 一、版权声明
 
