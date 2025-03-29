@@ -1,10 +1,10 @@
-# Custom Software License
+# CustomSoftwareLicense
 [CHN](#自定义软件许可协议)
-
+[ENG](#CustomSoftwareLicense)
 
 ## I. Copyright Notice
 
-The copyright of this software is firmly vested in \[Name of Copyright Holder/Organization Name], with the copyright year clearly designated as \[Specific Year]. This legal protection is comprehensive and encompasses every aspect of the software, from its source code to its graphical user interface elements. Without the explicit, written consent of the copyright holder, which must be obtained through a formal and documented process, no individual or entity, whether an individual developer, a corporate entity, or any other legal person, is permitted to engage in any of the following actions: copying any part or the entire software codebase, making alterations to the software's functionality, algorithms, or appearance, distributing the software to other parties either in its original form or as a modified version, publicly displaying the software for demonstration or promotional purposes, or executing the software in any context outside of the scope permitted by this license. Such actions, if carried out without proper authorization, are considered a violation of the copyright holder's exclusive rights and may lead to legal consequences.
+The copyright of this software is firmly vested in shundebo, with the copyright year clearly designated as 2025. This legal protection is comprehensive and encompasses every aspect of the software, from its source code to its graphical user interface elements. Without the explicit, written consent of the copyright holder, which must be obtained through a formal and documented process, no individual or entity, whether an individual developer, a corporate entity, or any other legal person, is permitted to engage in any of the following actions: copying any part or the entire software codebase, making alterations to the software's functionality, algorithms, or appearance, distributing the software to other parties either in its original form or as a modified version, publicly displaying the software for demonstration or promotional purposes, or executing the software in any context outside of the scope permitted by this license. Such actions, if carried out without proper authorization, are considered a violation of the copyright holder's exclusive rights and may lead to legal consequences.
 
 This license serves as a grant of specific usage rights to individuals or organizations that lawfully acquire a copy of the software. However, these rights are not absolute and are strictly circumscribed by the terms and conditions meticulously set forth in this license. The license acts as a legal contract between the copyright holder and the licensee, defining the boundaries within which the software can be used, modified, and shared. Any deviation from these terms is a breach of the license agreement.
 
@@ -16,7 +16,7 @@ Any individual or organization, regardless of their geographical location, size,
 
 **Attribution Requirement**
 
-Irrespective of the usage purpose, whether it is for personal, educational, or even limited commercial evaluation, when using this software, users are under a legal obligation to prominently retain the original copyright notice of the software. This notice should be visible in a location that is easily accessible to anyone who views or interacts with the software, such as in the software's startup screen, about section, or in the source code headers if applicable. Additionally, users must clearly indicate that the software is developed by \[Name of Copyright Holder/Organization Name]. In cases where users conduct secondary development based on this software and generate new results, such as creating a derivative application or enhancing the software's existing features, the copyright information of this software used in the new work and the identity of the original developer must be explicitly stated in the new outcomes. This ensures proper recognition of the original work and compliance with copyright laws.
+Irrespective of the usage purpose, whether it is for personal, educational, or even limited commercial evaluation, when using this software, users are under a legal obligation to prominently retain the original copyright notice of the software. This notice should be visible in a location that is easily accessible to anyone who views or interacts with the software, such as in the software's startup screen, about section, or in the source code headers if applicable. Additionally, users must clearly indicate that the software is developed by shundebo. In cases where users conduct secondary development based on this software and generate new results, such as creating a derivative application or enhancing the software's existing features, the copyright information of this software used in the new work and the identity of the original developer must be explicitly stated in the new outcomes. This ensures proper recognition of the original work and compliance with copyright laws.
 
 ## III. Modification Restrictions
 
@@ -70,7 +70,7 @@ If any provision of this license is found to be invalid or unenforceable by a co
 
 **Governing Law**
 
-This license agreement shall be governed by and construed in accordance with the laws of \[Jurisdiction], without regard to its conflict of law principles. Any legal actions or disputes arising out of this agreement shall be subject to the exclusive jurisdiction of the courts located within \[Jurisdiction].
+This agreement shall be governed by the laws of the People's Republic of China.
 
 **Amendments**
 
@@ -85,7 +85,7 @@ By using the software, the user acknowledges that they have read, understood, an
 
 ## 一、版权声明
 
-本软件的版权归 \[版权持有者/组织名称] 所有，版权年份为 \[具体年份]。该版权涵盖了软件的各个方面，从源代码到图形用户界面元素。未经版权持有者的明确书面许可，任何个人或实体（无论是个人开发者、公司还是其他法人）不得进行以下行为：复制软件的任何部分或整体代码、对软件的功能、算法或界面进行修改、将软件以原始形式或修改版分发给其他方、公开展示软件（包括用于演示或宣传目的）、或在未经许可的情况下执行该软件。任何未经授权的行为都将视为侵犯版权持有者的专有权利，可能会导致法律责任。
+本软件的版权归shundebo所有，版权年份为 \[具体年份]。该版权涵盖了软件的各个方面，从源代码到图形用户界面元素。未经版权持有者的明确书面许可，任何个人或实体（无论是个人开发者、公司还是其他法人）不得进行以下行为：复制软件的任何部分或整体代码、对软件的功能、算法或界面进行修改、将软件以原始形式或修改版分发给其他方、公开展示软件（包括用于演示或宣传目的）、或在未经许可的情况下执行该软件。任何未经授权的行为都将视为侵犯版权持有者的专有权利，可能会导致法律责任。
 
 本许可协议作为对合法获得软件副本的个人或组织的使用权授予。然而，这些使用权并非绝对，严格限定于本协议中所列的条款与条件。本协议是版权持有者与被许可人之间的法律合同，明确界定了软件使用、修改和共享的范围。任何违反这些条款的行为将构成违约。
 
@@ -97,7 +97,7 @@ By using the software, the user acknowledges that they have read, understood, an
 
 **署名要求**
 
-无论使用目的如何，无论是个人使用、教育用途，还是有限的商业评估，用户在使用本软件时，必须在软件中显著保留原始的版权声明。该声明应在用户查看或交互软件时显眼位置显示，例如在软件的启动界面、关于页面，或者源代码的头部注释中。此外，用户必须清晰注明本软件是由 \[版权持有者/组织名称] 开发的。如果用户基于本软件进行二次开发并生成新的成果（如创建派生应用程序或增强软件的现有功能），必须在新作品中显式标明使用了本软件，并明确指出原开发者的版权信息。这样可以确保对原作品的正确认定，并符合版权法规。
+无论使用目的如何，无论是个人使用、教育用途，还是有限的商业评估，用户在使用本软件时，必须在软件中显著保留原始的版权声明。该声明应在用户查看或交互软件时显眼位置显示，例如在软件的启动界面、关于页面，或者源代码的头部注释中。此外，用户必须清晰注明本软件是由shundebo开发的。如果用户基于本软件进行二次开发并生成新的成果（如创建派生应用程序或增强软件的现有功能），必须在新作品中显式标明使用了本软件，并明确指出原开发者的版权信息。这样可以确保对原作品的正确认定，并符合版权法规。
 
 ## 三、修改限制
 
@@ -135,10 +135,25 @@ By using the software, the user acknowledges that they have read, understood, an
 
 版权持有者不对因使用本软件而引起的任何间接、偶然或后果性损害负责，包括业务损失、利润损失或其他经济损失。间接损害是指次要后果，如利润或商业机会的损失；偶然损害指修复或替换软件的成本；后果性损害指软件使用引发的不可预见的结果。在任何情况下，版权持有者均不对这些损害承担责任，无论这些损害是否可预见，或是否由于软件中的错误、漏洞或故障引起。
 
-## 七、终止
+### 七、终止
 
-**许可终止**
+**许可证终止**
 
-本许可协议在用户违反协议条款时自动终止。用户必须立即停止使用软件，并删除或销毁所有副本。在终止后的使用将构成违约，版权持有者有权追求法律责任。
+本许可证在终止前一直有效。如果用户未能遵守本许可证的任何条款，许可证将自动终止。一旦终止，用户必须立即停止使用该软件，删除或销毁该软件的所有副本，并归还或销毁任何相关文档。许可证的终止并不会免除用户在终止前产生的任何义务，包括保持署名以及尊重版权所有者知识产权的义务。
+
+### 八、一般条款
+**可分割性**
+
+如果本许可证的任何条款被具有管辖权的法院认定为无效或不可执行，其余条款应继续完全有效。无效或不可执行的条款应进行修改，以尽可能贴近双方的意图。
+
+**适用法律**
+
+本协议应受中华人民共和国法律管辖。
+
+**修订**
+
+版权所有者保留随时修订或更新本许可证条款的权利。任何变更将以版权所有者认为适当的方式通知被许可人。在这些修订之后继续使用该软件即构成对修订条款的接受。
+
+通过使用该软件，用户确认其已阅读、理解并同意受本许可证的条款和条件约束。
 
 
